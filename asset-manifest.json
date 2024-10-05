@@ -1,13 +1,12 @@
 {
   "files": {
-    "main.css": "/Portfolioo/static/css/main.dbd462c1.css",
-    "main.js": "/Portfolioo/static/js/main.a73482f7.js",
+    "main.css": "/Portfolioo/static/css/main.3dd23c47.css",
+    "main.js": "/Portfolioo/static/js/main.996d90ea.js",
     "static/media/foodMenu.png": "/Portfolioo/static/media/foodMenu.c448c95278179af9f591.png",
     "static/media/Games.png": "/Portfolioo/static/media/Games.11caa098e2471c40b074.png",
     "static/media/Home.png": "/Portfolioo/static/media/Home.9bfc6324e186cf618a15.png",
     "static/media/Home-light.png": "/Portfolioo/static/media/Home-light.45a3946166b45ec399d6.png",
     "static/media/home-dark.png": "/Portfolioo/static/media/home-dark.69dbbb3abece223be09c.png",
-    "static/media/Abdelrhman.JPG": "/Portfolioo/static/media/Abdelrhman.83ef5e60d98ad068c51d.JPG",
     "static/media/Dan.png": "/Portfolioo/static/media/Dan.1f85c36d285e946fa2e8.png",
     "static/media/system.png": "/Portfolioo/static/media/system.7d79de87a67f0d4b01e2.png",
     "static/media/about.png": "/Portfolioo/static/media/about.e41242c4c16218915d60.png",
@@ -26,6 +25,7 @@
     "static/media/servicess.png": "/Portfolioo/static/media/servicess.e318f56cde95f1aff266.png",
     "static/media/weather.png": "/Portfolioo/static/media/weather.504a74a533f6d0522690.png",
     "static/media/video.png": "/Portfolioo/static/media/video.b923ec26141e5013203e.png",
+    "static/media/Abdelrhman.JPG": "/Portfolioo/static/media/Abdelrhman.a4c481fc48dc76724693.JPG",
     "static/media/Dev.png": "/Portfolioo/static/media/Dev.684a9e6d223d8db8664f.png",
     "static/media/Blog.png": "/Portfolioo/static/media/Blog.3a1c8cb517cb003ed490.png",
     "static/media/register.png": "/Portfolioo/static/media/register.a197961595d52269c0f2.png",
@@ -35,17 +35,14 @@
     "static/media/products.png": "/Portfolioo/static/media/products.e4ff8f2f58e8ad91e0c0.png",
     "static/media/wishlist.png": "/Portfolioo/static/media/wishlist.e6f67935a9f1f6852722.png",
     "static/media/wish list.png": "/Portfolioo/static/media/wish list.fd407a737e016a2b6b89.png",
-    "static/media/Quotes.png": "/Portfolioo/static/media/Quotes.b609cf9ccad825442b78.png",
     "static/media/cart.png": "/Portfolioo/static/media/cart.8357e414e220597cd61b.png",
     "static/media/fa-brands-400.ttf": "/Portfolioo/static/media/fa-brands-400.6205fd00fb1b573e9f0f.ttf",
     "static/media/profile.png": "/Portfolioo/static/media/profile.866fb211bad826a63283.png",
-    "static/media/ody.jpg": "/Portfolioo/static/media/ody.1f7ab7a43fb37c86d774.jpg",
-    "static/media/header.JPG": "/Portfolioo/static/media/header.29a4846ea84065b7edad.JPG",
     "static/media/fa-solid-900.woff2": "/Portfolioo/static/media/fa-solid-900.fb8184add5a3101ad0a3.woff2",
     "static/media/fa-brands-400.woff2": "/Portfolioo/static/media/fa-brands-400.8d3cabfc66809162fb4d.woff2",
     "static/media/sql-database-sql-azure-icon-1955x2048-4pmty46t.png": "/Portfolioo/static/media/sql-database-sql-azure-icon-1955x2048-4pmty46t.1881f32ef4e0ce53321d.png",
+    "static/media/Task.png": "/Portfolioo/static/media/Task.1c97a65975e19ed496f4.png",
     "static/media/media.png": "/Portfolioo/static/media/media.f4b670e427cc311170d3.png",
-    "static/media/BookMark.png": "/Portfolioo/static/media/BookMark.e98b34176ec37d8f47d5.png",
     "static/media/fa-regular-400.ttf": "/Portfolioo/static/media/fa-regular-400.adc51aab4d771ab65f81.ttf",
     "static/media/Home note.png": "/Portfolioo/static/media/Home note.539c19a0eecf2a52f3f6.png",
     "static/media/media_.png": "/Portfolioo/static/media/media_.f3331ceb1fc075c46445.png",
@@ -68,11 +65,11 @@
     "static/media/css.1b9dcc2e.svg": "/Portfolioo/static/media/css.1b9dcc2e.92e032c21b0dd656b441296568d8c0c4.svg",
     "static/media/html5.a7362949.svg": "/Portfolioo/static/media/html5.a7362949.bd96c311c435d77bf1cb676aeb051cf3.svg",
     "static/media/nextjs.svg": "/Portfolioo/static/media/nextjs.2426e69d99a468ba15350524597693c4.svg",
-    "main.dbd462c1.css.map": "/Portfolioo/static/css/main.dbd462c1.css.map",
-    "main.a73482f7.js.map": "/Portfolioo/static/js/main.a73482f7.js.map"
+    "main.3dd23c47.css.map": "/Portfolioo/static/css/main.3dd23c47.css.map",
+    "main.996d90ea.js.map": "/Portfolioo/static/js/main.996d90ea.js.map"
   },
   "entrypoints": [
-    "static/css/main.dbd462c1.css",
-    "static/js/main.a73482f7.js"
+    "static/css/main.3dd23c47.css",
+    "static/js/main.996d90ea.js"
   ]
 }
