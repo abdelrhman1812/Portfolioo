@@ -1,4 +1,8 @@
-import React from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React, { useEffect, useRef } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const timelineData = {
   education: [
@@ -45,8 +49,8 @@ const timelineData = {
   ],
 };
 
-const TimelineItem = ({ date, title, description, descriptions }) => (
-  <div className="timeline-item">
+const TimelineItem = ({ date, title, description, descriptions, index }) => (
+  <div className="timeline-item" data-index={index}>
     <div className="circle-dot"></div>
     <h3 className="timeline-date">
       <i className="fa fa-calendar"></i> {date}
@@ -62,20 +66,46 @@ const TimelineItem = ({ date, title, description, descriptions }) => (
   </div>
 );
 
-const Section = ({ title, data }) => (
-  <div className=" education padd-15">
-    <h3 className="title padd-15">{title}</h3>
-    <div className="row">
-      <div className="time-line-box padd-15">
-        <div className="timeline shadow-dark">
-          {data.map((item, index) => (
-            <TimelineItem key={index} {...item} />
-          ))}
+const Section = ({ title, data }) => {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const items = sectionRef.current.querySelectorAll(".timeline-item");
+
+    gsap.fromTo(
+      items,
+      { opacity: 0, x: -100 },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        ease: "power3.out",
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none reverse",
+        },
+      }
+    );
+  }, []);
+
+  return (
+    <div className="education padd-15" ref={sectionRef}>
+      <h3 className="title padd-15">{title}</h3>
+      <div className="row">
+        <div className="time-line-box padd-15">
+          <div className="timeline shadow-dark">
+            {data.map((item, index) => (
+              <TimelineItem key={index} index={index} {...item} />
+            ))}
+          </div>
         </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 const Timeline = () => (
   <div className="row">

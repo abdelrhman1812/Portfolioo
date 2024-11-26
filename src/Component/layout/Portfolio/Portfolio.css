@@ -1,0 +1,124 @@
+/* Portfolio */
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.portfolio {
+  border-bottom: 1px solid var(--bg-black-50);
+}
+
+.portfolio .container {
+  padding-bottom: 40px;
+}
+
+.portfolio .portfolio-heading {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+
+.portfolio .portfolio-heading h2 {
+  color: var(--text-black-900);
+  font-weight: 500;
+}
+
+.portfolio .portfolio-item {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  margin-bottom: 30px;
+}
+
+.portfolio .portfolio-item .portfolio-item-inner {
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  border: 6px solid var(--bg-black-100);
+}
+
+.portfolio i {
+  cursor: pointer;
+  color: var(--text-black-700);
+}
+
+.portfolio .portfolio-item .portfolio-item-inner .portfolio-img {
+  height: 250px;
+  width: 300px;
+  margin: 0 auto;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.portfolio .portfolio-item .portfolio-item-inner h3 {
+  display: flex;
+  margin: 10px 0;
+  justify-content: space-between;
+  color: var(--text-black-900);
+}
+
+.portfolio .portfolio-item .portfolio-item-inner h3 i {
+  margin: 0 10px;
+}
+
+.portfolio .portfolio-item .portfolio-item-inner .tech {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-top: 1px solid var(--skin-color);
+}
+
+.portfolio .portfolio-item .portfolio-item-inner .tech img {
+  width: 30px;
+  margin: 0 5px;
+}
+
+.portfolio .portfolio-item .portfolio-item-inner .portfolio-img img {
+  width: 100%;
+  display: block;
+}
+
+.portfolio .portfolio-item .portfolio-item-inner:hover {
+  transition: all 0.3s ease;
+  transform: translateY(-10px) translateX(10px);
+}
+
+/* Filter Buttons */
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-buttons button {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.05);
+  background: transparent;
+  border-radius: 6px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: var(--text-black-900);
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.filter-buttons button:hover {
+  background: var(--skin-color);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.filter-buttons button.active {
+  background: var(--skin-color);
+  color: #fff;
+  transition: all 0.3s ease;
+}

@@ -1,0 +1,118 @@
+/* Home */
+.home {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0;
+  color: var(--text-black-900);
+  border-bottom: 1px solid var(--bg-black-50);
+  padding-bottom: 0 !important;
+  min-height: 100vh;
+}
+
+.home .home-info {
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+
+h3.my-profession {
+  font-size: 30px;
+  margin: 15px 0;
+}
+
+h3.hello span {
+  font-size: 28px;
+  margin: 15px 0;
+  margin-right: 7px;
+}
+
+h3.hello span.name {
+  font-family: cursive;
+  color: var(--skin-color);
+}
+
+.home-info h3 {
+  display: flex;
+  font-size: 30px;
+  color: var(--text-black-900);
+}
+
+.home-info h3 .typing {
+  color: var(--skin-color);
+  margin-left: 5px;
+  color: var(--text-black-900);
+}
+
+.home-info p {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: var(--text-black-700);
+}
+
+.home .btn i {
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.home .btn i.fa-arrow-right {
+  background-color: #fff;
+  color: var(--skin-color);
+  border-radius: 50%;
+}
+
+.home a.cv {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 33px;
+  color: #fff;
+  display: inline-block;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  border-radius: 40px;
+  border: none;
+  background-color: var(--skin-color);
+  position: relative;
+  z-index: 10;
+}
+
+.home a.cv:hover {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.home .contact-me a i {
+  padding: 5px;
+  color: #fff;
+  font-size: 22px;
+  margin-right: 15px;
+  border-radius: 10px;
+}
+
+.home .contact-me a i.fa-linkedin {
+  background-color: #0e6bff;
+}
+
+.home .contact-me a i.fa-github {
+  background-color: #6e5494;
+}
+
+.home .contact-me a i.fa-whatsapp {
+  background-color: #25d366;
+}
+
+figure {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

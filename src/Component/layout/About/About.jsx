@@ -1,4 +1,5 @@
 import React from "react";
+import "./About.css";
 import AboutMe from "./AboutMe";
 import PersonalInfo from "./PersonalInfo";
 import Timeline from "./Timeline";
@@ -20,7 +21,6 @@ function About() {
                 {/* personal info  */}
                 <PersonalInfo />
                 {/* Skills */}
-                {/* <Skills /> */}
                 {/* Education */}
                 <Timeline />
               </div>

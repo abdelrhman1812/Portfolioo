@@ -9,5 +9,6 @@ import "./colors/color-3.css";
 import "./colors/color-4.css";
 import "./colors/color-5.css";
 import "./index.css";
+import "./media-queries.css";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<App />);

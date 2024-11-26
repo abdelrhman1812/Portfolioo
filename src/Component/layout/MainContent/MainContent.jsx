@@ -6,6 +6,7 @@ import MainHeader from "../Header/MainHeader";
 import Portfolio from "../Portfolio/Portfolio";
 import Services from "../Services/Services";
 import Skills from "../Skills/Skills";
+// import Skills from "../Skills/Skills";
 
 function MainContent() {
   return (
@@ -13,6 +14,7 @@ function MainContent() {
       <div className="main-content">
         <MainHeader />
         <About />
+        {/* <Skills /> */}
         <Skills />
         <Services />
         <Portfolio />

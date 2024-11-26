@@ -1,0 +1,170 @@
+/* About Section */
+
+.about {
+  background-color: var(--bg-black-section) !important;
+  border-bottom: 1px solid var(--bg-black-50);
+}
+
+/* About Content */
+.about .about-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* About Text */
+.about .about-content .about-text {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.about .about-content .about-text h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: var(--text-black-900);
+}
+
+.about .about-content .about-text h3 span {
+  color: var(--skin-color);
+}
+
+.about .about-content .about-text p {
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--text-black-700);
+}
+
+/*  Personal Info  */
+
+.about .about-content .personal-info {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-top: 40px;
+}
+
+/* Personal Info Items */
+.about .about-content .personal-info .info-item {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.about .about-content .personal-info .info-item p {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 0;
+  color: var(--text-black-900);
+  border-bottom: 1px solid var(--bg-black-50);
+}
+
+.about .about-content .personal-info .info-item p i {
+  color: var(--skin-color);
+}
+
+.about .about-content .personal-info .info-item p span {
+  font-weight: 400;
+  margin-left: 4px;
+  display: inline-block;
+  color: var(--text-black-700);
+}
+
+/* Links and Buttons */
+.about .about-content .personal-info .info-item a {
+  margin-left: 5px;
+  color: var(--text-black-900);
+}
+
+/*Education & Experience  */
+
+.about .about-content .education,
+.about .about-content .experience {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-top: 30px;
+}
+
+.about-content h3.title {
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: var(--text-black-900);
+}
+
+/* Timeline */
+.about .about-content .time-line-box {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.about .about-content .time-line-box .timeline {
+  background-color: var(--bg-black-100);
+  padding: 30px 15px;
+  border: 1px solid var(--bg-black-50);
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.about .about-content .time-line-box .timeline:hover {
+  border-color: var(--skin-color);
+}
+
+.about .about-content .time-line-box .timeline .timeline-item {
+  position: relative;
+  padding-left: 37px;
+  padding-bottom: 50px;
+}
+
+.about .about-content .time-line-box .timeline .timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+/* Timeline Line & Dot */
+.about .about-content .time-line-box .timeline .timeline-item::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  left: 7px;
+  top: 0;
+  background-color: var(--skin-color);
+}
+
+.about .about-content .time-line-box .timeline .timeline-item .circle-dot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: var(--skin-color);
+}
+
+/* Timeline Text */
+.about .about-content .time-line-box .timeline .timeline-item .timeline-date {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: var(--text-black-700);
+}
+
+.about .about-content .time-line-box .timeline .timeline-item .fa {
+  color: var(--skin-color);
+  margin-right: 5px;
+}
+
+.about .about-content .time-line-box .timeline .timeline-item .timeline-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 1px;
+  text-transform: capitalize;
+  color: var(--text-black-900);
+}
+
+.about .about-content .time-line-box .timeline .timeline-item .timeline-text {
+  line-height: 25px;
+  font-size: 16px;
+  text-align: justify;
+  color: var(--text-black-700);
+}

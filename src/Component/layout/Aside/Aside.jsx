@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import logo from "../../../Assets/images/Sidebar/st_small_507x507-pad_600x600_f8f8f8.u8-removebg-preview.png";
+import "./SideBar.css";
+
 function Aside() {
   let togglerBtn = useRef(null);
   let aside = useRef(null);

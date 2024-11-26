@@ -1,0 +1,46 @@
+/* Skills */
+
+.skills-item {
+  flex: 0 0 32.32%;
+  max-width: 32.32%;
+  border-radius: 6px;
+  background-color: var(--bg-black-100);
+  margin: 10px 7px 10px 0;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  padding: 15px 20px !important;
+}
+
+.skills-item:hover {
+  transition: all 0.3s ease;
+  border-color: var(--skin-color);
+}
+
+.skills-item:hover span {
+  transform: scale(1.1);
+  letter-spacing: 2px;
+  margin-left: 5px;
+  transition: all 0.3s ease;
+}
+
+.skills-item:hover img {
+  transition: all 0.3s ease;
+  transform: rotate(-45deg);
+}
+
+.skills-item .row {
+  align-items: center;
+}
+
+.skills-item img {
+  width: 50px;
+  transition: all 0.3s ease;
+}
+
+.skills-item span {
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  color: var(--text-black-900);
+}

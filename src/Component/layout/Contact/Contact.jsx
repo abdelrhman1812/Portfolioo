@@ -1,6 +1,7 @@
 import emailjs from "emailjs-com";
 import React, { useState } from "react";
 import toast from "react-hot-toast";
+import "./Contact.css";
 
 function Contact() {
   const [formData, setFormData] = useState({

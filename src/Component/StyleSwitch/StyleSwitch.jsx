@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-
+import "./Switch.css";
 function StyleSwitch() {
   const styleSwitch = useRef(null);
   const styleSwitchToggler = useRef(null);
@@ -24,7 +24,7 @@ function StyleSwitch() {
 
     // Loop through each section and toggle classes
     sections.forEach((section) => {
-      section.classList.toggle("postion-fixed");
+      section.classList.toggle("position-fixed");
       section.classList.toggle("close");
     });
 

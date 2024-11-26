@@ -1,0 +1,135 @@
+/* ========== Aside ========== */
+
+aside {
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 270px;
+  height: 100%;
+  padding: 30px;
+  position: fixed;
+  transition: all 0.3s ease;
+  background-color: var(--bg-black-100);
+}
+
+aside img {
+  width: 80%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+aside .nav-toggle {
+  height: 40px;
+  width: 45px;
+  border: 1px solid var(--bg-black-50);
+  cursor: pointer;
+  position: fixed;
+  left: 300px;
+  top: 20px;
+  border-radius: 5px;
+  background-color: var(--bg-black-100);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+aside .nav-toggle.open span {
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+aside .nav-toggle.open span::before {
+  transform: rotate(45deg);
+  top: 0;
+  transition: all 0.3s ease;
+}
+
+aside .nav-toggle.open span::after {
+  transform: rotate(-45deg);
+  top: 0;
+  transition: all 0.3s ease;
+}
+
+aside .nav-toggle span {
+  display: inline-block;
+  height: 2px;
+  width: 18px;
+  background-color: var(--skin-color);
+  position: relative;
+}
+
+aside .nav-toggle span::before {
+  content: "";
+  height: 2px;
+  width: 18px;
+  background-color: var(--skin-color);
+  left: 0;
+  top: -6px;
+  position: absolute;
+}
+
+aside .nav-toggle span::after {
+  content: "";
+  height: 2px;
+  width: 18px;
+  background-color: var(--skin-color);
+  left: 0;
+  top: 6px;
+  position: absolute;
+}
+
+/* Ul Links */
+aside .ul-nav {
+  display: none;
+  margin-top: 50px;
+}
+
+aside .ul-nav li {
+  margin-bottom: 20px;
+  display: block;
+}
+
+aside .ul-nav li span {
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  cursor: pointer;
+  padding: 5px 15px;
+  transition: all 0.3s ease;
+  color: var(--text-black-900);
+  border-bottom: 1px solid var(--bg-black-50);
+}
+
+aside .ul-nav li span.active {
+  color: var(--skin-color);
+}
+
+aside .ul-nav li span i {
+  margin-right: 15px;
+}
+
+.scroll-section a {
+  margin-bottom: 20px;
+}
+
+/* In Media */
+aside.open {
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+aside .nav-toggle.open {
+  left: 300px;
+  transition: all 0.3s ease;
+}
+
+.section.open {
+  /* left: 270px; */
+  transition: all 0.3s ease;
+}
+
+.section.close {
+  left: 270px;
+}

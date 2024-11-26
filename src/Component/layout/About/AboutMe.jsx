@@ -1,9 +1,38 @@
-import React from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React, { useEffect, useRef } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const AboutMe = () => {
+  const aboutSectionRef = useRef(null);
+
+  useEffect(() => {
+    const element = aboutSectionRef.current;
+
+    // GSAP ScrollTrigger animation
+    gsap.fromTo(
+      element,
+      { opacity: 0, y: 50 }, // Initial state
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: element,
+          start: "top 80%", // Trigger animation when element is 80% visible
+          end: "bottom 20%", // Trigger ends when bottom is 20% visible
+          toggleActions: "play reverse play reverse", // Replay animation on scroll in/out
+          scrub: true, // Smooth animation while scrolling
+        },
+      }
+    );
+  }, []);
+
   return (
     <div className="row">
-      <div className="about-text padd-15">
+      <div className="about-text padd-15" ref={aboutSectionRef}>
         <h3>
           I`m Abdelrhman Ali <span> Front End Developer</span>
         </h3>

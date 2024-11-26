@@ -1,4 +1,6 @@
-import React from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React, { useEffect, useRef } from "react";
 import Bootstrap from "../../../Assets/images/skills/bootstrap.png";
 import CSS from "../../../Assets/images/skills/css.1b9dcc2e.svg";
 import Express from "../../../Assets/images/skills/express-original.svg";
@@ -13,6 +15,9 @@ import ReactLogo from "../../../Assets/images/skills/react.svg";
 import Sequelize from "../../../Assets/images/skills/sequelize.svg";
 import SQL from "../../../Assets/images/skills/sql-database-sql-azure-icon-1955x2048-4pmty46t.png";
 import Tailwind from "../../../Assets/images/skills/tailwind-css.svg";
+import "./Skills.css";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const skillsData = [
   { name: "HTML", image: HTML },
@@ -32,8 +37,32 @@ const skillsData = [
 ];
 
 const Skills = () => {
+  const skillsRef = useRef(null);
+
+  useEffect(() => {
+    const skillItems = skillsRef.current.querySelectorAll(".skills-item");
+
+    gsap.fromTo(
+      skillItems,
+      { opacity: 0, x: -100 },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        ease: "power3.out",
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: skillsRef.current,
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none reverse",
+        },
+      }
+    );
+  }, []);
+
   return (
-    <section className="skills padd-15" id="skills">
+    <section className="skills section padd-15" id="skills" ref={skillsRef}>
       <div className="container">
         {/* Title */}
         <div className="row">
